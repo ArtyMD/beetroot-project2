@@ -9,13 +9,16 @@
   height: 800px;
   padding: 50px 215px;
   display: flex;
-  background: linear-gradient(270deg, rgba(126, 90, 255, 0.95), rgba(85, 183, 255, 0.95)), url(images/tu-tram-pham-202263\ 1.jpg);
+  background: linear-gradient(
+      270deg,
+      rgba(126, 90, 255, 0.95),
+      rgba(85, 183, 255, 0.95)
+    ),
+    url(images/tu-tram-pham-202263\ 1.jpg);
 }
-
 .logo {
   height: 54px;
 }
-
 .nav-block {
   list-style: none;
   display: flex;
@@ -23,11 +26,9 @@
   justify-content: space-between;
   width: 515px;
   height: 18px;
+  & a {
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+  }
 }
-.nav-block a {
-  text-decoration: none;
-  color: white;
-  text-transform: uppercase;
-}
-
-/*# sourceMappingURL=styles.css.map */
