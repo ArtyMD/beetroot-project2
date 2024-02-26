@@ -3,5 +3,5 @@ $(".slider").slick({
   arrows: false,
   dots: true,
   vertical: true,
-  verticalSwiping: true,
+  verticalSwiping: true
 });

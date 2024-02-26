@@ -4,34 +4,228 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>BeetRootProject2</title>
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <link rel="stylesheet" type="text/css" href="slick/slick.css" />
     <link rel="stylesheet" href="/node_modules/normalize.css/normalize.css" />
     <link rel="stylesheet" href="/styles.css" />
-    <link rel="stylesheet" type="text/css" href="slick/slick.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- The callback parameter is required, so we use console.debug as a noop -->
+    <script
+      async
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDVD6pcNXQjJXJmt2sbUep_Zhd0ZdFcEV8&callback=console.debug&libraries=maps,marker&v=beta"
+    ></script>
+    <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
     <div class="container">
       <header class="header">
-        <img src="images/Logo.png" class="logo" />
-        <nav>
+        <nav class="header__nav">
+          <a href="#"><img src="images/Logo.png" class="logo" /></a>
           <ul class="nav-block">
-            <a href="#"><li>about us</li></a>
-            <a href="#"><li>projects</li></a>
-            <a href="#"><li>news</li></a>
-            <a href="#"><li>contact</li></a>
+            <a href="#"
+              ><li><span class="nav-block__circle"></span>about us</li></a
+            >
+            <a href="#projects"
+              ><li><span class="nav-block__circle"></span>projects</li></a
+            >
+            <a href="#news"
+              ><li><span class="nav-block__circle"></span>news</li></a
+            >
+            <a href="#contacts"
+              ><li><span class="nav-block__circle"></span>contact</li></a
+            >
           </ul>
+          <div class="socials">
+            <a href="#"><img src="images/social-fb.png" alt="" /></a
+            ><a href="#"><img src="images/social-twitter.png" alt="" /></a
+            ><a href="#"><img src="images/social-ig.png" alt="" /></a>
+          </div>
         </nav>
-        <div class="socials">
-          <a href="#"><img src="images/social-fb.png" alt="" /></a
-          ><a href="#"><img src="images/social-twitter.png" alt="" /></a
-          ><a href="#"><img src="images/social-ig.png" alt="" /></a>
-        </div>
+
         <div class="slider">
-          <div>Slide 1</div>
-          <div>Slide 2</div>
-          <div>Slide 3</div>
+          <div>
+            <h1>SIMPLE & MODERN</h1>
+            <h2>WE MAKE THE WORLD BEAUTIFUL EVERYDAY</h2>
+          </div>
+          <div>
+            <h1>STYLISH & LUXORIOUS</h1>
+            <h2>WE MAKE THE WORLD BEAUTIFUL EVERYDAY</h2>
+          </div>
+          <div>
+            <h1>AFFORDABLE & GREEN</h1>
+            <h2>WE MAKE THE WORLD BEAUTIFUL EVERYDAY</h2>
+          </div>
         </div>
       </header>
-      <section></section>
+      <section class="projects" id="projects">
+        <div class="projects__line"></div>
+        <h2 class="projects__title mainTitle">what we do</h2>
+        <div class="projects__block--left">
+          <div class="block__img">
+            <div class="block__img--square"></div>
+            <img src="images/image1.png" alt="" />
+          </div>
+          <div class="block__txt">
+            <span class="block__txt--subtitle">one world</span>
+            <h2 class="projects__title">TRADE CENTER</h2>
+            <p class="projects__text">
+              Increasing prosperity in our lives can be accomplished by having
+              the right frame of mind. The truth is, our thoughts are very
+              powerful.
+            </p>
+            <button class="btn">more details</button>
+            <span class="projects__locationtxt"
+              ><i class="fa-solid fa-location-dot"></i> New York City, United
+              States - 1776 feet
+            </span>
+          </div>
+        </div>
+        <div class="projects__block--right">
+          <div class="block__txt--right">
+            <span class="block__txt--subtitle">one world</span>
+            <h2 class="projects__title">TRADE CENTER</h2>
+            <p class="projects__text">
+              Increasing prosperity in our lives can be accomplished by having
+              the right frame of mind. The truth is, our thoughts are very
+              powerful.
+            </p>
+            <button class="btn">more details</button>
+            <span class="projects__locationtxt"
+              ><i class="fa-solid fa-location-dot"></i> New York City, United
+              States - 1776 feet
+            </span>
+          </div>
+          <div class="block__img">
+            <div class="block__img--square2"></div>
+            <img id="blockimg2" src="images/image2.png" alt="" />
+          </div>
+        </div>
+      </section>
+      <section class="news" id="news">
+        <div class="news__line white"></div>
+        <h2 class="news__title white mainTitle">latest news</h2>
+        <div class="news-card-wrapper">
+          <article class="news__card">
+            <img src="images/news-img1.png" alt="news" />
+            <div class="news__card--wrapper">
+              <h3 class="news__card--heading">
+                SEE THE UNMATCHED BEAUTY OF THE GREAT.
+              </h3>
+              <p class="news__card--body">
+                Free directories: directories are perfect for customers that are
+                searching for...
+              </p>
+              <div class="news__card--autor">
+                <img src="images/profile1.png" alt="" class="profile" />
+                <div class="author-wrapper">
+                  <span class="autor-name">Alja Brun</span>
+                  <span class="publish-date">20 Jan 2020</span>
+                </div>
+              </div>
+            </div>
+          </article>
+          <article class="news__card">
+            <img src="images/news-img1.png" alt="news" />
+            <div class="news__card--wrapper">
+              <h3 class="news__card--heading">
+                SEE THE UNMATCHED BEAUTY OF THE GREAT.
+              </h3>
+              <p class="news__card--body">
+                Free directories: directories are perfect for customers that are
+                searching for...
+              </p>
+              <div class="news__card--autor">
+                <img src="images/profile1.png" alt="" class="profile" />
+                <div class="author-wrapper">
+                  <span class="autor-name">Alja Brun</span>
+                  <span class="publish-date">20 Jan 2020</span>
+                </div>
+              </div>
+            </div>
+          </article>
+          <article class="news__card">
+            <img src="images/news-img1.png" alt="news" />
+            <div class="news__card--wrapper">
+              <h3 class="news__card--heading">
+                SEE THE UNMATCHED BEAUTY OF THE GREAT.
+              </h3>
+              <p class="news__card--body">
+                Free directories: directories are perfect for customers that are
+                searching for...
+              </p>
+              <div class="news__card--autor">
+                <img src="images/profile1.png" alt="" class="profile" />
+                <div class="author-wrapper">
+                  <span class="autor-name">Alja Brun</span>
+                  <span class="publish-date">20 Jan 2020</span>
+                </div>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+      <section class="gallery">
+        <div class="gallery__line"></div>
+        <h2 class="gallery__title mainTitle">gallery</h2>
+        <div class="gallery__block">
+          <img src="images/gal-image1.png" alt="" class="image1" />
+          <img src="images/gal-image2.png" alt="" class="image2" />
+          <img src="images/gal-image3.png" alt="" class="image3" />
+          <img src="images/gal-image4.png" alt="" class="image4" />
+          <img src="images/gal-image5.png" alt="" class="image5" />
+        </div>
+        <button class="btn btn2">see more</button>
+      </section>
+      <section class="map">
+        <gmp-map
+          center="46.957012594915476, 7.448765480552155"
+          zoom="15"
+          map-id="DEMO_MAP_ID"
+        >
+          <gmp-advanced-marker
+            position="46.957012594915476, 7.44876548055215"
+            title="My location"
+          ></gmp-advanced-marker>
+        </gmp-map>
+      </section>
+      <footer>
+        <section class="contacts" id="contacts">
+          <div class="contacts__line"></div>
+          <h2 class="contacts__title contactTitle">GET IN TOUCH</h2>
+          <div class="contacts__wrapper">
+            <ul>
+              <li>
+                <i class="fa-solid fa-location-dot"></i> 91 Nolan Extensions
+                Suite 670
+              </li>
+              <li><i class="fa-solid fa-phone"></i> +001 356-868-2454</li>
+              <li><i class="fa-solid fa-inbox"></i> montichello@service.com</li>
+              <li><i class="fa-solid fa-clock"></i> From 07:05AM to 19:30PM</li>
+            </ul>
+            <form action="#" id="form">
+              <input type="text" placeholder="Name" />
+              <input type="email" placeholder="Email" />
+              <button type="submit" class="btn btn2" value="Submit" form="form">
+                submit
+              </button>
+            </form>
+          </div>
+        </section>
+        <div class="footer-wrapper">
+          <a href="#"> <img src="images/Logo.png" alt="" class="logo" /></a>
+          <div class="socials">
+            <a href="#"><img src="images/social-fb.png" alt="" /></a
+            ><a href="#"><img src="images/social-twitter.png" alt="" /></a
+            ><a href="#"><img src="images/social-ig.png" alt="" /></a>
+          </div>
+        </div>
+        <span>Copyrights © 2020 Montichello</span>
+      </footer>
     </div>
 
     <script
@@ -45,5 +239,9 @@
     <script type="text/javascript" src="slick/slick.min.js"></script>
 
     <script src="script.js"></script>
+    <script
+      src="https://kit.fontawesome.com/01ce28e888.js"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
